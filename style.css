@@ -1,0 +1,119 @@
+:root{
+    --bg-color: #F5F5DC;
+    --accent-color: #3b9910;
+    --card-size: 200px;
+    --card-margin: 5px;
+  }
+  
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: var(--bg-color);
+    font-family: 'Festive', cursive;
+  
+    line-height: 1.4;
+    color: var(--accent-color);
+  }
+
+  h1{
+    font-size: 48px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  p{
+    font-size: 38px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* STRUTTURA BASE PAGINE DEI GIOCHI */
+  
+  .board{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-area{
+    padding: 12px;
+  
+    position: relative;
+  }
+  
+  .game-data{
+    padding: 12px;
+    width: 240px;
+  }
+  
+
+  
+  /* ALERT */
+  
+  .game-alert{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom:0;
+  
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .game-alert-message{
+    font-size: 40px;
+    padding: 20px;
+    font-family: 'Festive', cursive;
+    color: var(--accent-color);
+    background-color: var(--bg-color);
+  }
+
+
+    /* MEMORY */
+
+#grid {
+    height: calc(var(--card-size) * 3 + var(--card-margin)*6);
+    width: calc(var(--card-size) * 4 + var(--card-margin)*8);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: var(--card-size);
+    height: var(--card-size);
+    background-image: url('./images/john.jpg');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    cursor: pointer;
+    margin: var(--card-margin);
+}
+
+.carnival {
+    background-image: url('./images/carnival.jpg');
+}
+
+.padlock {
+    background-image: url('./images/padlock.jpg');
+}
+
+.party {
+    background-image: url('./images/party.jpg');
+}
+
+.shower {
+    background-image: url('./images/shower.jpg');
+}
+
+.snow {
+    background-image: url('./images/snow.jpg');
+}
+
+.sunrise {
+    background-image: url('./images/sunrise.jpg');
+}
